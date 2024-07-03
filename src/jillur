@@ -1,0 +1,22 @@
+ 
+//  ....Add Task handler...
+ setTasks([
+      ...tasks,
+      {
+       id:getNextId(tasks),
+       text:text,
+       done:false
+      }
+     ])
+
+//    Change task Handler  //
+const nextTasks=tasks.map((t)=>{
+    if(task.id==t.id)
+      return task
+    else
+    return t
+  })
+  setTasks(nextTasks)
+
+//   delete task handler
+setTasks(tasks.filter((t)=>t.id!==taskId))
